@@ -5,6 +5,7 @@
         <item name="android:actionBarStyle">@style/YouinActionBar</item>
         <!-- Support library compatibility -->
         <item name="actionBarStyle">@style/YouinActionBar</item>
+        <item name="android:background">@android:color/white</item>
     </style>
 
     <!-- Action bar style -->
