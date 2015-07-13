@@ -23,7 +23,7 @@
             android:label="Login/Register" >
         </activity>
 
-        <activity
+        <activity android:theme="@style/AppThemeNoActionBar"
             android:name=".WelcomeActivity"
             android:label="Welcome screen" >
         </activity>

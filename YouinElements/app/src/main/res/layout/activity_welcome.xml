@@ -10,5 +10,31 @@
     tools:context=".WelcomeActivity"
     android:background="@android:color/white">
 
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/round_light_yellow"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Sign up"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:onClick="signUpUser"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/round_dark_yellow"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Sign in"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:textColor="#fff"
+        android:onClick="signInUser"
+        android:textSize="20sp"/>
 
 </LinearLayout>
