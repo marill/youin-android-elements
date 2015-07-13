@@ -22,6 +22,11 @@
             android:name=".LoginActivity"
             android:label="Login/Register" >
         </activity>
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="Welcome screen" >
+        </activity>
     </application>
 
 </manifest>

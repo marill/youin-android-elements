@@ -8,6 +8,12 @@
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:text="See welcome screen"
+        android:onClick="showWelcomeScreen" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:text="See login screen"
         android:onClick="showLoginScreen" />
 
