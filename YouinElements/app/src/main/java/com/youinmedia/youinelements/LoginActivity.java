@@ -3,11 +3,10 @@ package com.youinmedia.youinelements;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.*;
-import android.content.res.AssetManager;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.EditText;
-
-import java.util.Locale;
+import android.widget.TextView;
 
 
 public class LoginActivity extends ActionBarActivity {
@@ -16,13 +15,35 @@ public class LoginActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        
-        EditText un = (EditText)findViewById(R.id.username);
-        EditText pw = (EditText)findViewById(R.id.password);
 
-        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/Roboto-Regular.ttf");
+        final EditText un = (EditText)findViewById(R.id.username);
+        final EditText pw = (EditText)findViewById(R.id.password);
+        TextView error = (TextView)findViewById(R.id.error_message);
 
-        un.setTypeface(custom_font);
-        pw.setTypeface(custom_font);
+        Typeface roboto_font = Typeface.createFromAsset(getAssets(),  "fonts/Roboto-Regular.ttf");
+
+        un.setTypeface(roboto_font);
+        pw.setTypeface(roboto_font);
+        error.setTypeface(roboto_font);
+
+
+        un.addTextChangedListener(new TextWatcher() {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (start >= 2) {
+                    un.setBackgroundResource(R.drawable.textfield_valid);
+                }
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+
+
     }
 }

@@ -14,8 +14,8 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="@string/username_placeholder"
-        android:inputType="text"
-        android:background="@drawable/edit_text_background"
+        android:inputType="textNoSuggestions"
+        android:background="@drawable/textfield_normal"
         android:layout_marginBottom="10dp"
         android:gravity="center" />
 
@@ -26,7 +26,15 @@
         android:layout_height="wrap_content"
         android:hint="@string/password_placeholder"
         android:inputType="textPassword"
-        android:background="@drawable/edit_text_background"
+        android:background="@drawable/textfield_normal"
         android:gravity="center" />
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Error message"
+        android:textColor="@color/red_light"/>
 
 </LinearLayout>
