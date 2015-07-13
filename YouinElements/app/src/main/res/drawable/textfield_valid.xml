@@ -14,7 +14,7 @@
             <solid android:color="@android:color/transparent" />
 
             <padding
-                android:bottom="10dp"
+                android:bottom="20dp"
                 android:left="10dp"
                 android:right="10dp"
                 android:top="10dp" />
