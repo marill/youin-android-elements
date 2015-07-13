@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme for API >= 21 -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/yellow_light</item>
+        <item name="colorPrimaryDark">@color/yellow_dark</item>
+    </style>
+
+</resources>

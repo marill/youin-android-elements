@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/YouinActionBar</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/YouinActionBar</item>
+    </style>
+
+    <!-- Action bar style -->
+    <style name="YouinActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:textColorPrimary">@color/text_light</item>
+        <item name="android:background">@color/yellow_light</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/yellow_light</item>
+    </style>
+
+</resources>

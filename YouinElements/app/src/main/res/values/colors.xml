@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Yellow -->
+    <color name="yellow_light">#f0bd5b</color>
+    <color name="yellow_dark">#c4a444</color>
+    <!-- Red -->
+    <color name="red_light">#fb7f5f</color>
+    <color name="red_dark">#af4a31</color>
+    <!-- Blue -->
+    <color name="blue_light">#4c7cff</color>
+    <color name="blue_dark">#234ab3</color>
+    <!-- Green -->
+    <color name="green_light">#058e81</color>
+    <color name="green_dark">#397670</color>
+
+    <!-- Text colors -->
+    <color name="text_light">#FFFFFF</color>
+    <color name="text_normal">#717171</color>
+
+
+</resources>
