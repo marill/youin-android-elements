@@ -30,13 +30,17 @@ public class WelcomeActivity extends AppCompatActivity {
 
     }
 
-    // Sign up button clicked
+    /**
+     * Sign up button clicked
+     */
     public void signUpUser(View view) {
         //Intent intent = new Intent(this, LoginActivity.class);
         //startActivity(intent);
     }
 
-    // Sign in button clicked
+    /**
+     * Sign in button clicked
+     */
     public void signInUser(View view) {
         //Intent intent = new Intent(this, LoginActivity.class);
         //startActivity(intent);

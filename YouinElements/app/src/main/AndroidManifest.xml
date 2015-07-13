@@ -27,6 +27,11 @@
             android:name=".WelcomeActivity"
             android:label="Welcome screen" >
         </activity>
+
+        <activity
+            android:name=".AddFriendsActivity"
+            android:label="Add friends" >
+        </activity>
     </application>
 
 </manifest>

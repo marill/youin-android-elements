@@ -2,11 +2,12 @@ package com.youinmedia.youinelements;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.*;
 import android.content.*;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,11 @@ public class MainActivity extends ActionBarActivity {
 
     public void showWelcomeScreen(View view) {
         Intent intent = new Intent(this, WelcomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void showAddFriendsScreen(View view) {
+        Intent intent = new Intent(this, AddFriendsActivity.class);
         startActivity(intent);
     }
 }
