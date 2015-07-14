@@ -17,8 +17,10 @@
     <style name="YouinActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
         <item name="android:textColorPrimary">@color/text_light</item>
         <item name="android:background">@color/yellow_light</item>
+        <item name="android:backgroundStacked">@color/yellow_light</item>
         <!-- Support library compatibility -->
         <item name="background">@color/yellow_light</item>
+        <item name="backgroundStacked">@color/yellow_light</item>
     </style>
 
 </resources>

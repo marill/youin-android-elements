@@ -5,6 +5,9 @@
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/yellow_light</item>
         <item name="colorPrimaryDark">@color/yellow_dark</item>
+        <item name="actionBarTheme">@style/AppTheme.ActionBarTheme</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="actionBarTabTextStyle">@style/tabtextcolor</item>
     </style>
 
     <!-- No action bar theme for API >= 21  -->
@@ -13,4 +16,29 @@
         <item name="colorPrimaryDark">@color/yellow_dark</item>
     </style>
 
+    <!-- Set the color of the arrow  -->
+    <style name="AppTheme.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- THIS is where you can color the arrow! -->
+        <item name="colorControlNormal">@color/text_dark</item>
+        <item name="colorPrimary">@color/yellow_light</item>
+    </style>
+
+    <!-- Set the color of the arrow and the title text -->
+    <style name="AppTheme.ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:background">@color/yellow_light</item>
+        <item name="background">@color/yellow_light</item>
+        <item name="backgroundStacked">@color/yellow_light</item>
+        <item name="android:backgroundStacked">@color/yellow_light</item>
+    </style>
+
+    <style name="MyActionBarTitleText"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="tabtextcolor" parent="@style/Widget.AppCompat.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
 </resources>
