@@ -2,8 +2,14 @@ package com.youinmedia.youinelements;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.database.Cursor;
 import android.graphics.drawable.ColorDrawable;
+import android.provider.ContactsContract;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.CursorLoader;
+import android.support.v4.content.Loader;
+import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
@@ -11,14 +17,25 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.ProgressBar;
 
-public class AddFriendsActivity extends AppCompatActivity implements ActionBar.TabListener{
+public class AddFriendsActivity extends AppCompatActivity implements ActionBar.TabListener {
     Button facebookButton;
     Button lightningGroupsButton;
+    ListView userList;
+
+    // This is the Adapter being used to display the list's data
+    SimpleCursorAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +62,25 @@ public class AddFriendsActivity extends AppCompatActivity implements ActionBar.T
         facebookButton.setTypeface(roboto_font);
         lightningGroupsButton.setTypeface(roboto_font);
 
+        handleIntent(getIntent());
 
+        String[] actressArray = {"Alia Bhatt", "Anushka Sharma", "Deepika Padukone",
+                "Jacqueline Fernandez", "Kareena Kapoor", "Katrina Kaif",
+                "Parineeti Chopra", "Priyanka Chopra", "Shraddha Kapoor",
+                "Sonakshi Sinha"};
+
+        userList = (ListView) findViewById(R.id.user_list);
+        userList.setAdapter(new ArrayAdapter<String>(this, R.layout.user_item, R.id.user_item_name, actressArray));
+
+        userList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                Object o = userList.getItemAtPosition(position);
+
+            }
+        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -77,8 +111,7 @@ public class AddFriendsActivity extends AppCompatActivity implements ActionBar.T
     @Override
     public void onTabSelected(ActionBar.Tab tab,
                               FragmentTransaction fragmentTransaction) {
-        // When the given tab is selected, show the tab contents in the
-        // container vie
+
     }
 
     @Override
@@ -90,4 +123,17 @@ public class AddFriendsActivity extends AppCompatActivity implements ActionBar.T
     public void onTabReselected(ActionBar.Tab tab,
                                 FragmentTransaction fragmentTransaction) {
     }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        handleIntent(intent);
+    }
+
+    private void handleIntent(Intent intent) {
+        if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
+            String query = intent.getStringExtra(SearchManager.QUERY);
+            // Do a search and do something with the results here.
+        }
+    }
+
 }
