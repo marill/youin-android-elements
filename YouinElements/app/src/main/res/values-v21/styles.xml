@@ -40,5 +40,7 @@
 
     <style name="tabtextcolor" parent="@style/Widget.AppCompat.Light.ActionBar.TabText">
         <item name="android:textColor">@color/text_light</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">fontFamily: sans-serif-thin</item>
     </style>
 </resources>
