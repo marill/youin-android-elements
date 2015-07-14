@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Yellow -->
-    <color name="yellow_light">#f0bd5b</color>
-    <color name="yellow_dark">#c4a444</color>
+    <color name="yellow_light">#efbc5b</color>
+    <color name="yellow_dark">#cea344</color>
     <!-- Red -->
-    <color name="red_light">#fb7f5f</color>
-    <color name="red_dark">#af4a31</color>
+    <color name="red_light">#fa7f5f</color>
+    <color name="red_dark">#ae4a31</color>
     <!-- Blue -->
     <color name="blue_light">#4c7cff</color>
-    <color name="blue_dark">#234ab3</color>
+    <color name="blue_dark">#234ab2</color>
     <!-- Green -->
-    <color name="green_light">#058e81</color>
-    <color name="green_dark">#397670</color>
+    <color name="green_light">#21b472</color>
+    <color name="green_dark">#3a8664</color>
+    <!-- Purple -->
+    <color name="purple_light">#b212b2</color>
+    <color name="purple_dark">#843384</color>
 
     <!-- Text colors -->
     <color name="text_light">#FFFFFF</color>
-    <color name="text_normal">#717171</color>
+    <color name="text_normal">#bcbcbc</color>
+    <color name="text_dark">#700c0c0c</color>
+    <color name='text_inactive'>#70ffffff</color>
 
+    <!-- Other colors -->
+    <color name="blue_fb">#3b5998</color>
+    <color name='gray_background'>#999999</color>
 
 </resources>
